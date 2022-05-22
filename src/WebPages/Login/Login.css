@@ -17,15 +17,14 @@
 }
 .user-container input{
     width: 60%;
-    margin: 3px 20px;
-  border-radius: 10px;
+    margin: 7px 20px;
+  border-radius: 6px;
   align-items: center;
   justify-content: center;
   
 }
-#fname{
-    height: 50px;
-}
+
+
 .all-buttons{
     justify-content: space-around;
     display: flex;

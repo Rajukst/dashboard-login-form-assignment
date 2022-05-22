@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+
 import { Link } from 'react-router-dom';
 import "./Login.css"
 
@@ -16,10 +16,10 @@ const Login = () => {
           <form>
             <p className='mytext'>Sign into MYBOS Admin Portal</p>
             <input
-              type="email"
+              type="text"
               id="fname"
               name="email"
-              placeholder="User Email"
+              placeholder="Username"
               
               required
             />
