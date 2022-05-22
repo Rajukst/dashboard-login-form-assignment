@@ -3,14 +3,17 @@ import MyChart from './Charts/MyChart';
 import MyCalender from './MyCalender/MyCalender';
 import photo from "../../Photos/Loginbg1.jpg"
 import "./Dashboard.css"
-import { Grid } from '@mui/material';
+
 import { Link } from 'react-router-dom';
+import { Card, Col, Container, Row } from 'react-bootstrap';
+import ItemAction from './ItemAction/ItemAction';
 const Dashboard = () => {
  
   return (
-    <Grid container spacing={2}>
-    <Grid item xs={12} md={2} lg={2}>
-      <div className="left-container">
+    <Container fluid>
+  <Row>
+    <Col xs={12} md={2} lg={2}>
+    <div className="left-container">
         <div className="heading">
           <h1>MYBOS</h1>
         </div>
@@ -60,13 +63,67 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-    </Grid>
-    <Grid item xs={12} md={10} lg={10}>
-    <Grid item xs={12} md={4} lg={4}>
-    <h1>dkdkdkdkdk</h1>
-  </Grid>
-   </Grid>
-  </Grid>
+    </Col>
+    <Col xs={12} md={10} lg={10}>
+    <Row>
+    <Col xs={12} md={4} lg={4}>
+    <div className="first-coulmn">
+      <div className="body-textItem">
+        <p>Community</p>
+        <p>Broadcast</p>
+        <p>Shift Log</p>
+        <p>Lobby Screen</p>
+      </div>
+    </div>
+    </Col>
+    <Col xs={12} md={4} lg={4}>
+    <div className="heads-div">
+      <div className="search-icon">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div className="input-field">
+      
+        <input type="text" placeholder="Search" />
+      </div>
+    </div>
+    </Col>
+    <Col xs={12} md={4} lg={4}>
+    <div className="head-div">
+      <h1>this is h1</h1>
+    </div>
+    </Col>
+    </Row>
+    <Row>
+    <Col xs={12} md={4} lg={4}>
+    <div className="second-coulmn mt-3">
+      <div className="body-textItems">
+        <MyCalender></MyCalender>
+      </div>
+    </div>
+    </Col>
+    <Col xs={12} md={4} lg={4}>
+    <div className="third-div mt-3">
+     <div className="graph-text">
+       <div className="left-text">
+         <h3>Cases Graph</h3>
+       </div>
+       <div className="left-text">
+         <h6>Today</h6>
+       </div>
+     </div>
+     <MyChart></MyChart>
+    </div>
+    </Col> 
+    <Col xs={12} md={4} lg={4}>
+    <div className="second-item mt-3">
+     <ItemAction></ItemAction>
+    </div>
+    </Col>
+    </Row>
+    </Col>
+  </Row>
+</Container>
+  
   );
 };
 

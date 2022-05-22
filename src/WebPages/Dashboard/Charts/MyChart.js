@@ -10,6 +10,8 @@ const data = [
 
 const MyChart = () => {
     return (
+
+      
         <PieChart width={800} height={400}>
       <Pie
         data={data}
