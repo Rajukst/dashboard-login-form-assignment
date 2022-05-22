@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 
 import { Link } from 'react-router-dom';
 import "./Login.css"
@@ -33,7 +34,7 @@ const Login = () => {
               required
             />
             <br />
-           <button>Confirm</button>
+           <Link to="/dashboard"><Button>Confirm</Button></Link>
           </form>
 
           <div className="mt-5 password-field">
