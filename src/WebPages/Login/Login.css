@@ -1,0 +1,49 @@
+.my-section{
+    background-image: url(../../Photos/Loginbg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+ 
+}
+.login-continer{
+    background-color: rgba(0, 0, 0, 0.568) ;
+    max-width: 700px;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+.user-container input{
+    width: 60%;
+    margin: 3px 20px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  
+}
+#fname{
+    height: 50px;
+}
+.all-buttons{
+    justify-content: space-around;
+    display: flex;
+   
+}
+.heading-text{
+    color: white;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+}
+.mytext{
+    color: white;
+    font-weight: bold;
+}
+.password-field a{
+font-weight: bold;
+color: white;
+}
+.password-field span{
+    color: rgba(255, 255, 255, 0.788);
+}
